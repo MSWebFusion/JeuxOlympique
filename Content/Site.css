@@ -1,7 +1,10 @@
-﻿:root {
+﻿@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
     --section-color: #686868;
-    --section-top: 3em; 
+    --section-top: 3em;
     --section-padding: 3em;
+    --shadow-color: #333333
 }
 
 
@@ -9,34 +12,94 @@ html, body {
     background: #A3A3A3;
     margin: 0;
     color: white;
+    font-family: Inknut Antiqua;
 }
 
 .backNav {
     width: 100%;
-    height: 100vh;
-    box-shadow: 
-        0px 8px 50px black, 
-        
+    height: 95vh;
+    box-shadow: 0px 10px 50px var(--shadow-color);
 }
 
-.navbar{
-   background : var(--section-color);
-
+.navbar {
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    border: none;
+    font-size: 18px;
 }
+
+.navbar-nav > li > a {
+    margin-top: 15px;
+}
+
+.navbar-inverse .navbar-nav > li > a{
+    color:white;
+}
+
+    .navbar-inverse .navbar-nav > li > a:hover {
+        color: #1CA7D3;
+    }
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+    ul li a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #1CA7D3;
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: all 0.5s;
+    }
+
+    ul li a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #1CA7D3;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: all 0.5s;
+    }
+
+         ul li a:hover::before, ul li a:hover::after {
+            transform: scaleX(1);
+         }
 
 h1 {
-    font-size: 42px;
+    font-size: 62px;
     text-transform: uppercase;
+    font-weight:800;
+}
+
+.containtTitreNav{
+    position: absolute;
+    top: 35vh;
+    left: 5%;
+}
+
+.titreNav{
+    font-size:82px;
 }
 
 #lookPlay {
     padding: 3em;
-    margin-top: 10vh;
+    margin-top: 12.5em;
     display: flex;
     background: var(--section-color);
-    box-shadow: 
-        8px 0px 50px black, -8px -0px 50px black,
-        0px 8px 50px black, -0px -8px 50px ;
+    box-shadow: 8px 0px 50px var(--shadow-color), -8px -0px 50px var(--shadow-color), 0px 8px 50px var(--shadow-color), -0px -8px 50px;
+    
 }
 
 
@@ -45,16 +108,29 @@ h1 {
     border-top-right-radius: 30%;
 }
 
-.voirJeuxP{
+.voirJeux h1 {
+    background: linear-gradient(to right, rgba(153, 184, 250, 1) 0%, rgba(255, 121, 121, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.voirJeuxP {
     width: 90%;
     padding-top: 5em;
     text-align: justify;
+    color: rgba(153, 184, 250, 1);
 }
+
 
 #gallery {
     margin-top: var(--section-top);
-    background: var(--section-color);
     padding: var(--section-padding);
+}
+
+#gallery h1 {
+    background: linear-gradient(14deg, rgba(255,184,0,1) 0%, rgba(255,255,255,1) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .imgGallery {
@@ -79,7 +155,7 @@ h1 {
     }
 #fade {
     position: absolute;
-    background: linear-gradient(90deg, var(--section-color), transparent 10%, transparent 90%, var(--section-color));
+    background: linear-gradient(90deg, #A3A3A3, transparent 10%, transparent 90%, #A3A3A3);
     inset: 0;
     pointer-events: none;
 }
@@ -104,7 +180,14 @@ h1 {
     width: 100%;
     margin-top: var(--section-top);
     padding: var(--section-padding);
+    box-shadow: 8px 0px 50px var(--shadow-color), -8px -0px 50px var(--shadow-color), 0px 8px 50px var(--shadow-color), -0px -8px 50px;
 }
+
+    #formula h1 {
+        background: linear-gradient(326deg, rgba(212,255,130,1) 0%, rgba(255,140,145,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
 .formula {
     margin-top: var(--section-top);
@@ -171,6 +254,11 @@ h1 {
     margin-top: 8px;
     cursor: pointer;
     text-transform:uppercase;
+}
+
+.info button:hover {
+    background: #054156;
+    transition: 1s;
 }
 
 
