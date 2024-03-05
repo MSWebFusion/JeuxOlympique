@@ -1,0 +1,193 @@
+﻿:root {
+    --section-color: #686868;
+    --section-top: 3em; 
+    --section-padding: 3em;
+}
+
+
+html, body {
+    background: #A3A3A3;
+    margin: 0;
+    color: white;
+}
+
+.backNav {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 
+        0px 8px 50px black, 
+        
+}
+
+.navbar{
+   background : var(--section-color);
+
+}
+
+h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+#lookPlay {
+    padding: 3em;
+    margin-top: 10vh;
+    display: flex;
+    background: var(--section-color);
+    box-shadow: 
+        8px 0px 50px black, -8px -0px 50px black,
+        0px 8px 50px black, -0px -8px 50px ;
+}
+
+
+#public {
+    width: 400px; 
+    border-top-right-radius: 30%;
+}
+
+.voirJeuxP{
+    width: 90%;
+    padding-top: 5em;
+    text-align: justify;
+}
+
+#gallery {
+    margin-top: var(--section-top);
+    background: var(--section-color);
+    padding: var(--section-padding);
+}
+
+.imgGallery {
+    display: flex;
+    width: 105rem;
+    position: relative;
+    overflow: hidden;
+}
+.inner {
+    width: fit-content;
+    display: flex;
+    gap: 1rem;
+    animation: loop 60s linear infinite;
+}
+
+    .imgGallery img {
+        padding: 1.5em;
+        height: 500px;
+        align-items: center;
+        gap: 0 0.2rem;
+        border-radius: 0.4rem;
+    }
+#fade {
+    position: absolute;
+    background: linear-gradient(90deg, var(--section-color), transparent 10%, transparent 90%, var(--section-color));
+    inset: 0;
+    pointer-events: none;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0%)
+    }
+
+    50% {
+        transform: translateX(-75%)
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+#formula {
+    background: var(--section-color);
+    width: 100%;
+    margin-top: var(--section-top);
+    padding: var(--section-padding);
+}
+
+.formula {
+    margin-top: var(--section-top);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-group {
+    display: flex;
+    gap: 25px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    /* cursor: pointer; */
+}
+
+    .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        /* pointer-events: none; */
+        transition: 0.5s;
+    }
+
+    .card .layer {
+        background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 75%;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .card .info {
+        position: absolute;
+        bottom: -50%;
+        padding: 15px;
+        transition: 0.5s bottom, 1.75s opacity;
+    }
+
+
+
+.info p {
+    font-size: 14px;
+    margin-top: 3px;
+    pointer-events: none;
+}
+
+.info button {
+    background: #1CA7D3;
+    border: none;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+
+
+.card:hover,
+.card:hover img
+.card:hover .layer {
+    transform: scale(1.1);
+}
+
+    .card:hover > .layer {
+        opacity: 1;
+    }
+
+    .card:hover > .info {
+        bottom: 0;
+    }
+
+.card-group:hover > .card:not(:hover) {
+    filter: blur(5px);
+}

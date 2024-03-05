@@ -1,0 +1,51 @@
+﻿@model IEnumerable<JeuxOlympique.Models.Offre>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeOffre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombrePersonnes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prix)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Photo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeOffre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombrePersonnes)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prix)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.OffreID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.OffreID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.OffreID })
+        </td>
+    </tr>
+}
+
+</table>
