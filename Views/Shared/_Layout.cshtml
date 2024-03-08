@@ -23,7 +23,7 @@
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li>@Html.ActionLink("Accueil", "Index", "Home")</li>
-                        <li>@Html.ActionLink("Billettrie", "Billettrie", "Home")</li>
+                        <li>@Html.ActionLink("Billetterie", "Index", "Offres")</li>
                         <li>@Html.ActionLink("Mon Compte", "Mon Compte", "Home")</li>
                     </ul>
                     @Html.Partial("_LoginPartial")
@@ -31,9 +31,9 @@
             </div>
         </div>
     </nav>
-    <img class="backNav" src="~/Content/image/background.png" />
+    <img class="backNav " src="~/Content/image/background.png" />
     <div class="containtTitreNav">
-        <p class="titreNav">
+        <p class="titreNav ">
             Les médailles <br />des jeux
         </p>
     </div>
@@ -42,7 +42,7 @@
         @RenderBody()
         <hr />
         <footer>
-
+            
             @Html.ActionLink("Mention légale", "Mention légale", "Home")
 
         </footer>

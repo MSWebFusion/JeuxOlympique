@@ -212,6 +212,7 @@
     <Content Include="Content\image\formule\Solo.png" />
     <Content Include="Content\image\formule\duo.png" />
     <Content Include="Content\image\formule\famille.png" />
+    <Content Include="Content\image\imgLogin.png" />
     <Content Include="Content\image\logo.png" />
     <Content Include="Content\image\public.png" />
     <Content Include="favicon.ico" />

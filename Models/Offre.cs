@@ -1,5 +1,6 @@
 ﻿
 using System.ComponentModel.DataAnnotations;
+using System.Web;
 
 namespace JeuxOlympique.Models
 {
@@ -7,7 +8,7 @@ namespace JeuxOlympique.Models
     {
         [Key]
         public int OffreID { get; set; }
-        public string Photo { get; set; }
+        public HttpPostedFileBase Photo { get; set; }
         public string TypeOffre { get; set; }
         public int NombrePersonnes { get; set; }
         public decimal Prix { get; set; }
