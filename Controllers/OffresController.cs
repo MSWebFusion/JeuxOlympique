@@ -18,8 +18,12 @@ namespace JeuxOlympique.Controllers
         public ActionResult Index()
         {
             return View(db.Offres.ToList());
+            
         }
-
+        public ActionResult OffresClientView()
+        {
+            return View(db.Offres.ToList());
+        }
         // GET: Offres/Details/5
         public ActionResult Details(int? id)
         {

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<JeuxOlympique.Models.Offre>
+
+@{
+    ViewBag.Title = "OffresClientView";
+}
+
+<h2>OffresClientView</h2>
+
+
+@foreach (var item in Model) {
+
+            @Html.DisplayFor(modelItem => item.Photo)
+      
+            @Html.DisplayFor(modelItem => item.TypeOffre)
+       
+            @Html.DisplayFor(modelItem => item.NombrePersonnes)
+       
+            @Html.DisplayFor(modelItem => item.Prix)
+      
+}
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Photo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TypeOffre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NombrePersonnes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prix)
+        </th>
+        <th></th>
+    </tr>
+
+
+</table>*@

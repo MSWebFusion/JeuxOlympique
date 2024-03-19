@@ -8,7 +8,6 @@ namespace JeuxOlympique.Models
     {
         [Key]
         public int ReservationID { get; set; }
-        public Utilisateur Utilisateur { get; set; }
         public Offre Offre { get; set; }
         public DateTime DateReservation { get; set; }
         public string StatutReservation { get; set; }

@@ -7,13 +7,13 @@ namespace JeuxOlympique.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addtab : IMigrationMetadata
+    public sealed partial class deletUtilisateur : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addtab));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(deletUtilisateur));
         
         string IMigrationMetadata.Id
         {
-            get { return "202403011612299_addtab"; }
+            get { return "202403191459038_deletUtilisateur"; }
         }
         
         string IMigrationMetadata.Source

@@ -179,14 +179,29 @@
     <Compile Include="Migrations\202403011042374_initiale.Designer.cs">
       <DependentUpon>202403011042374_initiale.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202403011612299_addtab.cs" />
-    <Compile Include="Migrations\202403011612299_addtab.Designer.cs">
-      <DependentUpon>202403011612299_addtab.cs</DependentUpon>
+    <Compile Include="Migrations\202403191356445_modifOffres.cs" />
+    <Compile Include="Migrations\202403191356445_modifOffres.Designer.cs">
+      <DependentUpon>202403191356445_modifOffres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403191400315_modiffOffres.cs" />
+    <Compile Include="Migrations\202403191400315_modiffOffres.Designer.cs">
+      <DependentUpon>202403191400315_modiffOffres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403191430247_modiffUtilisateur.cs" />
+    <Compile Include="Migrations\202403191430247_modiffUtilisateur.Designer.cs">
+      <DependentUpon>202403191430247_modiffUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403191459038_deletUtilisateur.cs" />
+    <Compile Include="Migrations\202403191459038_deletUtilisateur.Designer.cs">
+      <DependentUpon>202403191459038_deletUtilisateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202403191523435_modifmanage.cs" />
+    <Compile Include="Migrations\202403191523435_modifmanage.Designer.cs">
+      <DependentUpon>202403191523435_modifmanage.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Reservation.cs" />
-    <Compile Include="Models\Utilisateur.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Offre.cs" />
@@ -271,6 +286,7 @@
     <Content Include="Views\Offres\Details.cshtml" />
     <Content Include="Views\Offres\Edit.cshtml" />
     <Content Include="Views\Offres\Index.cshtml" />
+    <Content Include="Views\Offres\OffresClientView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -292,8 +308,20 @@
     <EmbeddedResource Include="Migrations\202403011042374_initiale.resx">
       <DependentUpon>202403011042374_initiale.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202403011612299_addtab.resx">
-      <DependentUpon>202403011612299_addtab.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202403191356445_modifOffres.resx">
+      <DependentUpon>202403191356445_modifOffres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403191400315_modiffOffres.resx">
+      <DependentUpon>202403191400315_modiffOffres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403191430247_modiffUtilisateur.resx">
+      <DependentUpon>202403191430247_modiffUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403191459038_deletUtilisateur.resx">
+      <DependentUpon>202403191459038_deletUtilisateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202403191523435_modifmanage.resx">
+      <DependentUpon>202403191523435_modifmanage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
