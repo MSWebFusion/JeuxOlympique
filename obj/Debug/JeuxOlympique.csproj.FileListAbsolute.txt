@@ -332,3 +332,5 @@ D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.modiffOffres.resourc
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.modiffUtilisateur.resources
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.deletUtilisateur.resources
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.modifmanage.resources
+D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.adddescriptionoffre.resources
+D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.midifPhoto.resources

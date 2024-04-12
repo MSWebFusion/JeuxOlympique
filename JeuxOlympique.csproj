@@ -199,8 +199,17 @@
     <Compile Include="Migrations\202403191523435_modifmanage.Designer.cs">
       <DependentUpon>202403191523435_modifmanage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404121321198_adddescriptionoffre.cs" />
+    <Compile Include="Migrations\202404121321198_adddescriptionoffre.Designer.cs">
+      <DependentUpon>202404121321198_adddescriptionoffre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404121324261_midifPhoto.cs" />
+    <Compile Include="Migrations\202404121324261_midifPhoto.Designer.cs">
+      <DependentUpon>202404121324261_midifPhoto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Panier.cs" />
     <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -247,6 +256,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\monScript.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -322,6 +332,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202403191523435_modifmanage.resx">
       <DependentUpon>202403191523435_modifmanage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404121321198_adddescriptionoffre.resx">
+      <DependentUpon>202404121321198_adddescriptionoffre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404121324261_midifPhoto.resx">
+      <DependentUpon>202404121324261_midifPhoto.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

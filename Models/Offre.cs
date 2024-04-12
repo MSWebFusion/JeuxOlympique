@@ -10,9 +10,10 @@ namespace JeuxOlympique.Models
         [Key]
         public int OffreID { get; set; }
 
-        [NotMapped]
-        public HttpPostedFileBase Photo { get; set; }
+        
+        public string Photo { get; set; }
         public string TypeOffre { get; set; }
+        public string description { get; set; }
         public int NombrePersonnes { get; set; }
         public decimal Prix { get; set; }
 

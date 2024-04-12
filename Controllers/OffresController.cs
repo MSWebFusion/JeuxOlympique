@@ -7,6 +7,8 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using JeuxOlympique.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNet.Identity;
 
 namespace JeuxOlympique.Controllers
 {
@@ -18,10 +20,15 @@ namespace JeuxOlympique.Controllers
         public ActionResult Index()
         {
             return View(db.Offres.ToList());
-            
+
         }
         public ActionResult OffresClientView()
         {
+            ViewData["Role"] = 0;
+            if (isAdminUser())
+            {
+                ViewData["Role"] = 1;
+            }
             return View(db.Offres.ToList());
         }
         // GET: Offres/Details/5
@@ -126,6 +133,22 @@ namespace JeuxOlympique.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+        }
+
+        public Boolean isAdminUser() {
+                if (User.Identity.IsAuthenticated) 
+                {var user = User.Identity; 
+                ApplicationDbContext context = new ApplicationDbContext();
+                var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context)); 
+                var s = UserManager.GetRoles(user.GetUserId());
+                if (s[0].ToString() == "Admin") 
+                { 
+                    return true;
+                } 
+                else { 
+                    return false;
+                } } 
+            return false;
         }
     }
 }

@@ -4,40 +4,70 @@
     ViewBag.Title = "OffresClientView";
 }
 
-<h2>OffresClientView</h2>
-
-
-@foreach (var item in Model) {
-
-            @Html.DisplayFor(modelItem => item.Photo)
-      
-            @Html.DisplayFor(modelItem => item.TypeOffre)
-       
-            @Html.DisplayFor(modelItem => item.NombrePersonnes)
-       
-            @Html.DisplayFor(modelItem => item.Prix)
-      
+@if (User.Identity.IsAuthenticated && (int)ViewData["Role"] == 1)
+{
+    <li>@Html.ActionLink("Billetterie", "index", "Offres")</li>
 }
 
-@*<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Photo)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TypeOffre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.NombrePersonnes)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Prix)
-        </th>
-        <th></th>
-    </tr>
+<section class="backOffres">
+
+    @foreach (var item in Model)
+    {
+
+        <div class="uneOffre">
+            <img class="imgOffre" src="@item.Photo" />
+            <div class="libellé">
+                <h2 class="titreOffre">@item.TypeOffre</h2>
+                <p class="paraOffre">@item.description</p>
+                <div class="contentBtnOffre">
+                    <div class="prix">@item.Prix</div>
+                    <button class="btn">Je fonce !</button>
+                </div>
+            </div>
+        </div>
+        @Html.DisplayFor(modelItem => item.Photo)
+
+        @Html.DisplayFor(modelItem => item.TypeOffre)
+
+        @Html.DisplayFor(modelItem => item.NombrePersonnes)
+
+        @Html.DisplayFor(modelItem => item.Prix)
+
+    }
+
+    <div class="uneOffre">
+        <img class="imgOffre" src="~/Content/image/formule/Solo.png" />
+        <div class="libellé">
+            <h2 class="titreOffre">Formule Solo</h2>
+            <p class="paraOffre">Plongez au cœur de l'excitation des Jeux Olympiques avec notre billet Formule Solo. Vivez une expérience inoubliable en solo, où chaque moment devient une mémoire à chérir pour toujours.</p>
+            <div class="contentBtnOffre">
+                <button class="btn">Je fonce !</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="uneOffreRevers">
+        <div class="libelléRevers">
+            <h2 class="titreOffre">Formule Duo</h2>
+            <p class="paraOffre">Partagez l'excitation des Jeux Olympiques avec un être cher grâce à notre billet Formule Duo. Créez des souvenirs inoubliables ensemble alors que vous assistez à certains des moments les plus captivants de l'histoire olympique.</p>
+            <div class="contentBtnOffre">
+                <button class="btn">Je fonce !</button>
+            </div>
+        </div>
+        <img class="imgOffre" src="~/Content/image/formule/duo.png" />
+    </div>
+
+    <div class="uneOffre">
+        <img class="imgOffre" src="~/Content/image/formule/famille.png" />
+        <div class="libellé">
+            <h2 class="titreOffre">Formule Solo</h2>
+            <p class="paraOffre">Emmenez toute votre famille dans une aventure olympique avec notre billet Formule Famille 4 Personnes. Partagez des moments de joie, d'excitation et d'inspiration ensemble, créant des souvenirs qui dureront toute une vie.</p>
+            <div class="contentBtnOffre">
+                <button class="btn">Je fonce !</button>
+            </div>
+        </div>
+    </div>
+
+</section>
 
 
-</table>*@
