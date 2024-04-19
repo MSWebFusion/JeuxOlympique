@@ -1,4 +1,6 @@
-﻿using System;
+﻿using JeuxOlympique.Models;
+using Microsoft.AspNet.Identity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,8 +10,11 @@ namespace JeuxOlympique.Controllers
 {
     public class HomeController : Controller
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
+            Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList().Sum(u => u.Quantite);
+
             return View();
         }
 

@@ -1,0 +1,41 @@
+﻿@using JeuxOlympique.Models
+
+@model JeuxOlympique.Models.panier
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Mon panier</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.Label("", "type")
+        </dt>
+
+        <dd>
+            @Model.Offre.TypeOffre
+        </dd>
+
+        <dt>
+            @Html.Label("", "Quantité")
+        </dt>
+
+        <dd>
+            @Model.Quantite
+        </dd>
+
+        <dt>
+            @Html.Label("", "Prix")
+
+        </dt>
+
+        <dd>
+            @Model.Offre.Prix * @Model.Quantite
+        </dd>
+
+    </dl>
+</div>

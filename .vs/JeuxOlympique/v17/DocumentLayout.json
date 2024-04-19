@@ -3,36 +3,68 @@
   "WorkspaceRootPath": "D:\\Studi\\Bachelor\\JO2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\controllers\\offrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\panier\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\controllers\\paniercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:controllers\\paniercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\panier\\payer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\payer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\panier\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\controllers\\offrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:controllers\\offrescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\offres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\offres\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\views\\offres\\offresclientview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\offres\\offresclientview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\panier\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\migrations\\202404121324261_midifphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:migrations\\202404121324261_midifphoto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\panier\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\models\\offre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:models\\offre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\migrations\\202404121321198_adddescriptionoffre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:migrations\\202404121321198_adddescriptionoffre.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\models\\panier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\models\\panier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:models\\panier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\offres\\offresclientview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\offres\\offresclientview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\offres\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\offres\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,120 +73,209 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 313,
-          "SelectedChildIndex": 1,
+          "DockedWidth": 315,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Web.config",
-              "RelativeDocumentMoniker": "Web.config",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Web.config",
-              "RelativeToolTip": "Web.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-04-12T13:44:03.946Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OffresController.cs",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\OffresController.cs",
-              "RelativeDocumentMoniker": "Controllers\\OffresController.cs",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\OffresController.cs",
-              "RelativeToolTip": "Controllers\\OffresController.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAAwB0AAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:32:29.933Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T18:41:52.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "202404121324261_midifPhoto.cs",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Migrations\\202404121324261_midifPhoto.cs",
-              "RelativeDocumentMoniker": "Migrations\\202404121324261_midifPhoto.cs",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Migrations\\202404121324261_midifPhoto.cs",
-              "RelativeToolTip": "Migrations\\202404121324261_midifPhoto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:24:31.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "202404121321198_adddescriptionoffre.cs",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Migrations\\202404121321198_adddescriptionoffre.cs",
-              "RelativeDocumentMoniker": "Migrations\\202404121321198_adddescriptionoffre.cs",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Migrations\\202404121321198_adddescriptionoffre.cs",
-              "RelativeToolTip": "Migrations\\202404121321198_adddescriptionoffre.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:21:25.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T18:41:36.413Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Offre.cs",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Models\\Offre.cs",
-              "RelativeDocumentMoniker": "Models\\Offre.cs",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Models\\Offre.cs",
-              "RelativeToolTip": "Models\\Offre.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-12T13:18:54.711Z",
-              "EditorCaption": ""
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T18:37:22.596Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OffresClientView.cshtml",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\OffresClientView.cshtml",
-              "RelativeDocumentMoniker": "Views\\Offres\\OffresClientView.cshtml",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\OffresClientView.cshtml",
-              "RelativeToolTip": "Views\\Offres\\OffresClientView.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAuAAAA",
+              "DocumentIndex": 5,
+              "Title": "Payer.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Payer.cshtml",
+              "RelativeDocumentMoniker": "Views\\panier\\Payer.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Payer.cshtml",
+              "RelativeToolTip": "Views\\panier\\Payer.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-12T13:14:55.98Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T18:22:35.05Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\panier\\Delete.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Delete.cshtml",
+              "RelativeToolTip": "Views\\panier\\Delete.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACIAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T18:15:52.19Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\panier\\Edit.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Edit.cshtml",
+              "RelativeToolTip": "Views\\panier\\Edit.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T18:10:05.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\panier\\Index.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Index.cshtml",
+              "RelativeToolTip": "Views\\panier\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T17:42:59.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\panier\\Details.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Details.cshtml",
+              "RelativeToolTip": "Views\\panier\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T17:30:08.469Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Offres\\Create.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\Create.cshtml",
+              "RelativeToolTip": "Views\\Offres\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T17:13:17.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "panierController.cs",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\panierController.cs",
+              "RelativeDocumentMoniker": "Controllers\\panierController.cs",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\panierController.cs",
+              "RelativeToolTip": "Controllers\\panierController.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAcwJwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:42:21.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdentityModels.cs",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Models\\IdentityModels.cs",
+              "RelativeDocumentMoniker": "Models\\IdentityModels.cs",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Models\\IdentityModels.cs",
+              "RelativeToolTip": "Models\\IdentityModels.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:35:01.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Panier.cs",
               "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Models\\Panier.cs",
               "RelativeDocumentMoniker": "Models\\Panier.cs",
               "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Models\\Panier.cs",
               "RelativeToolTip": "Models\\Panier.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-27T14:38:52.055Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T16:34:21.966Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Site.css",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Content\\Site.css",
-              "RelativeDocumentMoniker": "Content\\Site.css",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Content\\Site.css",
-              "RelativeToolTip": "Content\\Site.css",
-              "ViewState": "AQIAAB0BAAAAAAAAAAAQwEkBAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-04T12:29:28.883Z"
+              "Title": "OffresController.cs",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\OffresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OffresController.cs",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\OffresController.cs",
+              "RelativeToolTip": "Controllers\\OffresController.cs",
+              "ViewState": "AQIAAG0AAAAAAAAAAAAmwIEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T13:32:29.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OffresClientView.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\OffresClientView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Offres\\OffresClientView.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\OffresClientView.cshtml",
+              "RelativeToolTip": "Views\\Offres\\OffresClientView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-12T13:14:55.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Offres\\Edit.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Offres\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Offres\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-19T14:30:14.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-04-12T16:00:51.063Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 207,
+          "DockedWidth": 311,
           "SelectedChildIndex": -1,
           "Children": [
             {

@@ -36,29 +36,38 @@
                 @Html.DisplayNameFor(model => model.TypeOffre)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.NombrePersonnes)
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NBPersonnes)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Prix)
+            </th>
+            <th>
+                Option
             </th>
         </tr>
 
         @foreach (var item in Model)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Photo)
+                <td data-label="Photo">
+                    <img class="imgOffre"  src="~/Content/Formule/@item.Photo" />
                 </td>
-                <td>
+                <td data-label="TypeOffre">
                     @Html.DisplayFor(modelItem => item.TypeOffre)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.NombrePersonnes)
+                <td data-label="Description">
+                    @Html.DisplayFor(model => item.Description)
                 </td>
-                <td>
+                <td data-label="NB/Pers">
+                    @Html.DisplayFor(modelItem => item.NBPersonnes)
+                </td>
+                <td data-label="Prix">
                     @Html.DisplayFor(modelItem => item.Prix)
                 </td>
-                <td>
+                <td data-label="Option">
                     @Html.ActionLink("Edit", "Edit", new { id = item.OffreID }) |
                     @Html.ActionLink("Details", "Details", new { id = item.OffreID }) |
                     @Html.ActionLink("Delete", "Delete", new { id = item.OffreID })

@@ -10,17 +10,13 @@ namespace JeuxOlympique.Models
 {
     public class panier
     {
-    [Key]
-    public int PanierID { get; set; }
+        [Key]
+        public int PanierID { get; set; }
 
-    [ForeignKey("IdentityUser")] // Spécifie la relation avec la table Utilisateur
-    public IdentityUser User { get; set; } // Navigation property
+        public string UserId { get; set; } // Navigation property
 
-        [NotMapped]
-    public string TypeOffre { get; set; }
-    public int NombrePersonnes { get; set; }
-    public decimal Prix { get; set; }
+        public virtual Offre Offre { get; set; }
 
-    public virtual Offre Offre { get; set; }
+        public int Quantite { get; set;}
     }
 }

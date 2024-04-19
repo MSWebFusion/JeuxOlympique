@@ -1,0 +1,50 @@
+﻿@model IEnumerable<JeuxOlympique.Models.panier>
+@using JeuxOlympique.Models
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Mon panier</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("", "type")
+        </th>
+        <th>
+            @Html.Label("", "Quantité")
+
+        </th>
+        <th>
+            @Html.Label("", "Prix")
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Offre.TypeOffre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantite)
+            </td>
+            <td>
+                @{
+                    double total = Convert.ToDouble(item.Offre.Prix) * Convert.ToDouble(item.Quantite);
+                }
+                @total
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.PanierID }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.PanierID })
+            </td>
+        </tr>
+    }
+
+
+
+</table>
+@Html.ActionLink("Je paye", "Payer", "Panier", new { @class = "btn" })

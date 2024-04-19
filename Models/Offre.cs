@@ -9,12 +9,14 @@ namespace JeuxOlympique.Models
     {
         [Key]
         public int OffreID { get; set; }
-
-        
         public string Photo { get; set; }
+        [Display(Name = "Type offre")]
         public string TypeOffre { get; set; }
-        public string description { get; set; }
-        public int NombrePersonnes { get; set; }
+        [Display(Name = "Description")]
+        public string Description { get; set; }
+        [Display(Name = "Nb personne")]
+        public int NBPersonnes { get; set; }
+        [Display(Name = "Prix")]
         public decimal Prix { get; set; }
 
     }

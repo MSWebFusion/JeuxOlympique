@@ -9,26 +9,30 @@ using System.Web.Mvc;
 using JeuxOlympique.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity;
+using System.IO;
+using System.Data.Entity.Infrastructure;
 
 namespace JeuxOlympique.Controllers
 {
     public class OffresController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        private ApplicationDbContext dbPanier = new ApplicationDbContext();
 
         // GET: Offres
         public ActionResult Index()
         {
+            if (!isAdminUser())
+            {
+                return RedirectToAction("OffresClientView");
+            }
             return View(db.Offres.ToList());
 
         }
         public ActionResult OffresClientView()
         {
-            ViewData["Role"] = 0;
-            if (isAdminUser())
-            {
-                ViewData["Role"] = 1;
-            }
+            getRole();
+
             return View(db.Offres.ToList());
         }
         // GET: Offres/Details/5
@@ -49,6 +53,10 @@ namespace JeuxOlympique.Controllers
         // GET: Offres/Create
         public ActionResult Create()
         {
+            if (!isAdminUser())
+            {
+                return RedirectToAction("OffresClientView");
+            }
             return View();
         }
 
@@ -57,10 +65,28 @@ namespace JeuxOlympique.Controllers
         // plus de détails, consultez https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "OffreID,Photo,TypeOffre,NombrePersonnes,Prix")] Offre offre)
+        public ActionResult Create([Bind(Include = "OffreID,Photo,TypeOffre,Description,NBPersonnes,Prix")] Offre offre, HttpPostedFileBase file)
         {
             if (ModelState.IsValid)
             {
+
+                if (file != null && file.ContentLength > 0)
+                {
+                    try
+                    {
+                        string _FileName = Path.GetFileName(file.FileName);
+                        string _path = Path.Combine(Server.MapPath("~/Content/Formule"), _FileName);
+                        file.SaveAs(_path);
+                        offre.Photo = file.FileName;
+                    }
+                    catch (Exception)
+                    {
+
+                        ViewBag.ErrorMessage = "La photo ne s'est pas enregistré correctement!!";
+                        return View(offre);
+                    }
+                }
+
                 db.Offres.Add(offre);
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -89,10 +115,31 @@ namespace JeuxOlympique.Controllers
         // plus de détails, consultez https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "OffreID,Photo,TypeOffre,NombrePersonnes,Prix")] Offre offre)
+        public ActionResult Edit([Bind(Include = "OffreID,Photo,TypeOffre, Description,NBPersonnes,Prix")] Offre offre, HttpPostedFileBase file)
         {
             if (ModelState.IsValid)
             {
+                string NomPhotoExistante = offre.Photo;
+
+                if (file != null && file.ContentLength > 0)
+                {
+                    try
+                    {
+                        System.IO.File.Delete(Path.Combine(Server.MapPath("~/Content/Formule"), NomPhotoExistante));
+
+                        string _FileName = Path.GetFileName(file.FileName);
+                        string _path = Path.Combine(Server.MapPath("~/Content/Formule"), _FileName);
+                        file.SaveAs(_path);
+                        offre.Photo = file.FileName;
+                    }
+                    catch (Exception)
+                    {
+                        ViewBag.ErrorMessage = "La photo ne s'est pas enregistré correctement!!";
+                        return View(offre);
+                    }
+                }
+
+
                 db.Entry(offre).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
@@ -135,20 +182,45 @@ namespace JeuxOlympique.Controllers
             base.Dispose(disposing);
         }
 
-        public Boolean isAdminUser() {
-                if (User.Identity.IsAuthenticated) 
-                {var user = User.Identity; 
+        public Boolean isAdminUser()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var user = User.Identity;
                 ApplicationDbContext context = new ApplicationDbContext();
-                var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context)); 
+                var UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
                 var s = UserManager.GetRoles(user.GetUserId());
-                if (s[0].ToString() == "Admin") 
-                { 
+                if (s[0].ToString() == "Admin")
+                {
                     return true;
-                } 
-                else { 
+                }
+                else
+                {
                     return false;
-                } } 
+                }
+
+            }
             return false;
         }
+        public void getRole()
+        {
+            if (User.Identity.IsAuthenticated)
+            {
+                var user = User.Identity;
+                ViewBag.Name = user.Name;
+                ViewBag.displayMenu = "No";
+                if (isAdminUser())
+                {
+                    ViewBag.displayMenu = "Yes";
+                }
+            }
+            else
+            {
+                ViewBag.Name = "Not Logged IN";
+            }
+        }
+
     }
+
+
 }

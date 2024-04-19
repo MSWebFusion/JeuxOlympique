@@ -172,40 +172,21 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\OffresController.cs" />
+    <Compile Include="Controllers\panierController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202403011042374_initiale.cs" />
-    <Compile Include="Migrations\202403011042374_initiale.Designer.cs">
-      <DependentUpon>202403011042374_initiale.cs</DependentUpon>
+    <Compile Include="Migrations\202404191726385_initial.cs" />
+    <Compile Include="Migrations\202404191726385_initial.Designer.cs">
+      <DependentUpon>202404191726385_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202403191356445_modifOffres.cs" />
-    <Compile Include="Migrations\202403191356445_modifOffres.Designer.cs">
-      <DependentUpon>202403191356445_modifOffres.cs</DependentUpon>
+    <Compile Include="Migrations\202404191757071_ModificationPanier.cs" />
+    <Compile Include="Migrations\202404191757071_ModificationPanier.Designer.cs">
+      <DependentUpon>202404191757071_ModificationPanier.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202403191400315_modiffOffres.cs" />
-    <Compile Include="Migrations\202403191400315_modiffOffres.Designer.cs">
-      <DependentUpon>202403191400315_modiffOffres.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202403191430247_modiffUtilisateur.cs" />
-    <Compile Include="Migrations\202403191430247_modiffUtilisateur.Designer.cs">
-      <DependentUpon>202403191430247_modiffUtilisateur.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202403191459038_deletUtilisateur.cs" />
-    <Compile Include="Migrations\202403191459038_deletUtilisateur.Designer.cs">
-      <DependentUpon>202403191459038_deletUtilisateur.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202403191523435_modifmanage.cs" />
-    <Compile Include="Migrations\202403191523435_modifmanage.Designer.cs">
-      <DependentUpon>202403191523435_modifmanage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202404121321198_adddescriptionoffre.cs" />
-    <Compile Include="Migrations\202404121321198_adddescriptionoffre.Designer.cs">
-      <DependentUpon>202404121321198_adddescriptionoffre.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202404121324261_midifPhoto.cs" />
-    <Compile Include="Migrations\202404121324261_midifPhoto.Designer.cs">
-      <DependentUpon>202404121324261_midifPhoto.cs</DependentUpon>
+    <Compile Include="Migrations\202404191802299_ModificationPanierQuantite.cs" />
+    <Compile Include="Migrations\202404191802299_ModificationPanierQuantite.Designer.cs">
+      <DependentUpon>202404191802299_ModificationPanierQuantite.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -297,9 +278,16 @@
     <Content Include="Views\Offres\Edit.cshtml" />
     <Content Include="Views\Offres\Index.cshtml" />
     <Content Include="Views\Offres\OffresClientView.cshtml" />
+    <Content Include="Views\panier\Create.cshtml" />
+    <Content Include="Views\panier\Delete.cshtml" />
+    <Content Include="Views\panier\Details.cshtml" />
+    <Content Include="Views\panier\Edit.cshtml" />
+    <Content Include="Views\panier\Index.cshtml" />
+    <Content Include="Views\panier\Payer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Formule\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -315,29 +303,14 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202403011042374_initiale.resx">
-      <DependentUpon>202403011042374_initiale.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202404191726385_initial.resx">
+      <DependentUpon>202404191726385_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202403191356445_modifOffres.resx">
-      <DependentUpon>202403191356445_modifOffres.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202404191757071_ModificationPanier.resx">
+      <DependentUpon>202404191757071_ModificationPanier.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202403191400315_modiffOffres.resx">
-      <DependentUpon>202403191400315_modiffOffres.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202403191430247_modiffUtilisateur.resx">
-      <DependentUpon>202403191430247_modiffUtilisateur.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202403191459038_deletUtilisateur.resx">
-      <DependentUpon>202403191459038_deletUtilisateur.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202403191523435_modifmanage.resx">
-      <DependentUpon>202403191523435_modifmanage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202404121321198_adddescriptionoffre.resx">
-      <DependentUpon>202404121321198_adddescriptionoffre.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202404121324261_midifPhoto.resx">
-      <DependentUpon>202404121324261_midifPhoto.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202404191802299_ModificationPanierQuantite.resx">
+      <DependentUpon>202404191802299_ModificationPanierQuantite.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

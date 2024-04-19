@@ -7,6 +7,8 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using JeuxOlympique.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
+using System.Security.Principal;
 
 namespace JeuxOlympique.Controllers
 {
@@ -65,7 +67,7 @@ namespace JeuxOlympique.Controllers
                 : "";
 
             var userId = User.Identity.GetUserId();
-
+            
             var model = new IndexViewModel
             {
                 HasPassword = HasPassword(),

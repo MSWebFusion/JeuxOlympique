@@ -1,0 +1,32 @@
+﻿@model IEnumerable<JeuxOlympique.Models.panier>
+
+@{
+    ViewBag.Title = "Payer";
+}
+
+<h2>Paiement</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.Label("", "Montant Total de la commande")
+        </th>
+    </tr>
+
+    <tr>
+        <td>
+            @{
+                decimal Total = 0;
+                foreach (JeuxOlympique.Models.panier item in Model)
+                {
+                    Total += item.Quantite * item.Offre.Prix;
+                }
+            }
+            @Total
+        </td>
+    </tr>
+
+
+</table>
+
+bouton validation de paiement
