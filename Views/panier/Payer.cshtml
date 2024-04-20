@@ -6,7 +6,7 @@
 
 <h2>Paiement</h2>
 
-<table class="table">
+<table class="table marginTop tablePay">
     <tr>
         <th>
             @Html.Label("", "Montant Total de la commande")
@@ -14,7 +14,7 @@
     </tr>
 
     <tr>
-        <td>
+        <td data-label="Total de la commande">
             @{
                 decimal Total = 0;
                 foreach (JeuxOlympique.Models.panier item in Model)
@@ -25,8 +25,57 @@
             @Total
         </td>
     </tr>
-
-
 </table>
 
-bouton validation de paiement
+<form class="credit-card">
+    <div class="form-header">
+        <h4 class="title">Carte de crédit</h4>
+    </div>
+
+    <div class="form-body">
+ 
+        <input type="text" class="card-number" placeholder="Card Number">
+
+        <div class="date-field">
+            <div class="month">
+                <select name="Month">
+                    <option value="january">01</option>
+                    <option value="february">02</option>
+                    <option value="march">03</option>
+                    <option value="april">04</option>
+                    <option value="may">05</option>
+                    <option value="june">06</option>
+                    <option value="july">07</option>
+                    <option value="august">08</option>
+                    <option value="september">09</option>
+                    <option value="october">10</option>
+                    <option value="november">11</option>
+                    <option value="december">13</option>
+                </select>
+            </div>
+            <div class="year">
+                <select name="Year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="card-verification">
+            <div class="cvv-input">
+                <input type="text" placeholder="CVV">
+            </div>
+            <div class="cvv-details">
+                <p> Detail CVV</p>
+            </div>
+        </div>
+        <button type="submit" class="proceed-btn"><a href="#">Validé</a></button>
+    </div>
+</form>

@@ -15,26 +15,26 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.TypeOffre, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Offre.TypeOffre, htmlAttributes: new { @class = "control-label col-md-2" });
             <div class="col-md-10">
-                @Html.EditorFor(model => model.TypeOffre, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.TypeOffre, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Offre.TypeOffre, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Offre.TypeOffre, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.NombrePersonnes, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Offre.NBPersonnes, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.NombrePersonnes, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.NombrePersonnes, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Offre.NBPersonnes, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Offre.NBPersonnes, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Prix, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Offre.Prix, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Prix, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Prix, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Offre.Prix, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Offre.Prix, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -47,5 +47,5 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Retour à la liste", "Index")
 </div>

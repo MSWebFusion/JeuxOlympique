@@ -5,12 +5,40 @@
     ViewBag.Title = "Index";
 }
 
+
+<script>
+    // Fonction pour vérifier et modifier l'affichage du bouton en fonction de la quantité
+    function checkQuantite() {
+        // Sélectionne l'élément de la quantité par sa classe (remplace '.classe-quantite' par ta classe spécifique)
+        var quantiteElement = document.querySelector('.count');
+
+        // Vérifie si l'élément de quantité existe
+        if (quantiteElement) {
+
+            var quantite = quantiteElement.innerText.trim();
+
+            if (quantite !== "0") {
+                var boutonElement = document.querySelector('.btnPaye');
+                boutonElement.style.display = "flex";
+            } else {
+                var boutonElement = document.querySelector('.btnPaye');
+                boutonElement.style.display = "none";
+            }
+        }
+    }
+
+    // Appelle la fonction au chargement de la page
+    window.onload = function () {
+        checkQuantite();
+    };
+</script>
+
 <h2>Mon panier</h2>
 
-<table class="table">
+<table class="table marginTop">
     <tr>
         <th>
-            @Html.Label("", "type")
+            @Html.Label("", "Type")
         </th>
         <th>
             @Html.Label("", "Quantité")
@@ -19,32 +47,35 @@
         <th>
             @Html.Label("", "Prix")
         </th>
-        <th></th>
+        <th>
+            Option
+        </th>
     </tr>
 
     @foreach (var item in Model)
     {
         <tr>
-            <td>
+            <td data-label="Type">
                 @Html.DisplayFor(modelItem => item.Offre.TypeOffre)
             </td>
-            <td>
+            <td data-label="Quantité" class="quantite">
                 @Html.DisplayFor(modelItem => item.Quantite)
             </td>
-            <td>
+            <td data-label="Prix">
                 @{
                     double total = Convert.ToDouble(item.Offre.Prix) * Convert.ToDouble(item.Quantite);
                 }
                 @total
             </td>
-            <td>
+            <td data-label="Option">
                 @Html.ActionLink("Edit", "Edit", new { id = item.PanierID }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.PanierID })
             </td>
         </tr>
     }
 
-
-
 </table>
-@Html.ActionLink("Je paye", "Payer", "Panier", new { @class = "btn" })
+
+<div class="btnPaye">
+    @Html.ActionLink("Je paye", "Payer", "Panier", new { @class = "btn" })
+</div>
