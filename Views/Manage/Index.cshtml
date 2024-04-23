@@ -53,3 +53,41 @@
         </dl>
     </section>
 </div>
+
+<section class="billetValide">
+    <div>
+        <dl class="billetUser">
+            <dt>Nom:
+            <dd>
+                @if (currentUser.Nom != null)
+                {
+                    @Html.Label("", currentUser.Nom)
+                }
+            </dd>
+            <dt>Prénom:
+            <dd>
+                @if (currentUser.Prenom != null)
+                {
+                    @Html.Label("", currentUser.Prenom)
+                }
+            </dd>
+            <dt>Mail:
+            <dd>
+                @if (currentUser.Email != null)
+                {
+                    @Html.Label("", currentUser.Email.ToString())
+                }
+            </dd>
+            <dt>Formule:
+            <dd>
+                @if (currentUser.Email != null)
+                {
+                    @Html.Label("", currentUser.Email.ToString())
+                }
+            </dd>
+        </dl>
+        <div class="qrcode">
+            <img src="@Url.Action("GenerateQRCode", "QRCode", new { text = "Code!" })" alt="QRCode" />
+        </div>
+    </div>
+</section>

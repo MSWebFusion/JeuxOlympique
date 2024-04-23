@@ -329,3 +329,7 @@ D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.initial.resources
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.csproj.GenerateResource.cache
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.ModificationPanier.resources
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.ModificationPanierQuantite.resources
+D:\Studi\Bachelor\JO2024\bin\zxing.dll
+D:\Studi\Bachelor\JO2024\bin\zxing.presentation.dll
+D:\Studi\Bachelor\JO2024\bin\zxing.xml
+D:\Studi\Bachelor\JO2024\bin\zxing.presentation.xml

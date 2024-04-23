@@ -21,6 +21,7 @@ namespace JeuxOlympique.Controllers
         // GET: panier
         public ActionResult Index()
         {
+            var userId = User.Identity.GetUserId();
             List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList();
       
             return View(paniers);
@@ -165,13 +166,31 @@ namespace JeuxOlympique.Controllers
             return RedirectToAction("OffresClientView", "Offres");
         }
 
+        public ActionResult ViderPanier()
+        {
+            // Récupérer les éléments du panier de l'utilisateur actuellement connecté
+            var userId = User.Identity.GetUserId();
+            List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == userId).ToList();
+
+            // Supprimer tous les éléments du panier
+            foreach (var item in paniers)
+            {
+                db.paniers.Remove(item);
+            }
+
+            db.SaveChanges(); // Sauvegarder les modifications dans la base de données
+
+            // Retourner un statut HTTP 200 (OK) pour indiquer que la suppression a réussi
+            return Json(new { success = true });
+        }
+
         //public ActionResult validationPaiement(int id)
         //{
         //    //Création du envoie du mail avec les informations demandé
         //    return RedirectToAction("OffresClientView", "Offres");
         //}
 
-        
+
 
     }
 }

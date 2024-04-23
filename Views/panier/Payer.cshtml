@@ -79,3 +79,57 @@
         <button type="submit" class="proceed-btn"><a href="#">Validé</a></button>
     </div>
 </form>
+
+
+<section class="payValide">
+    <p class="pValide">Félicitations ! Votre paiement a été validé avec succès.</p>
+    <p class="pValide">Vous allez être redirigé vers votre compte dans un instant.</p>
+    <p class="pValide">Merci pour votre confiance</p>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var proceedBtn = document.querySelector('.proceed-btn');
+        proceedBtn.addEventListener('click', function () {
+            // Afficher la section payValide
+            var payValideSection = document.querySelector('.payValide');
+            payValideSection.style.display = 'flex';
+
+            // Attendre 5 secondes avant de rediriger vers la page index
+            setTimeout(function () {
+                window.location.href = '/Manage/Index';
+            }, 5000);
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var proceedBtn = document.querySelector('.proceed-btn');
+        proceedBtn.addEventListener('click', function () {
+            // Création d'une requête HTTP POST
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/Panier/ViderPanier', true); // L'URL doit être ajustée en fonction de votre route réelle
+
+            // Configuration de l'en-tête de la requête
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            // Gestionnaire de succès de la requête
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    console.log('Panier vidé avec succès');
+                    // Vous pouvez effectuer d'autres actions ici si nécessaire, par exemple, rediriger l'utilisateur
+                    window.location.href = '/Panier/Index'; // Rediriger vers la page de panier vide
+                } else {
+                    console.error('Erreur lors de la suppression du panier : ' + xhr.statusText);
+                }
+            };
+
+            // Gestionnaire d'erreur de la requête
+            xhr.onerror = function () {
+                console.error('Erreur lors de la suppression du panier');
+            };
+
+            // Envoyer la requête avec des données JSON vide
+            xhr.send(JSON.stringify({}));
+        });
+    });
+</script>

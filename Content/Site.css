@@ -417,6 +417,14 @@ tablePay{
     border-radius: 25px;
 }
 
+.imgAdmin > .imgOffre {
+    width: 110px;
+    height: 150px;
+    margin: 0;
+}
+
+
+
 .libellé {
     display: flex;
     flex-direction: column;
@@ -612,6 +620,61 @@ tablePay{
     padding-right: 95px;
     background: url('paypal-logo.svg') no-repeat 65% 56% #009cde;
 }
+
+.payValide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--section-color);
+    padding:var( --section-padding);
+    display:none;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius: 25px;
+}
+
+.billetValide {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: var(--section-color);
+    padding: var( --section-padding);
+    border-radius: 25px;
+}
+
+.billetUser > dt, .billetUser > dd {
+    padding: 0.5em 0;
+}
+
+.billetUser dd::before, .billetUser dd::after {
+    display: table;
+    content: " ";
+}
+
+    .billetUser dd::after{
+        clear: both;
+    }
+@media (min-width: 768px) {
+    .billetUser dt {
+        float: left;
+        width: 90px;
+        clear: left;
+        text-align: right;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .billetUser dd {
+        margin-left: 125px;
+    }
+}
+
+
+
 
 @media (max-width: 1200px) {
     .card-group {
