@@ -333,3 +333,4 @@ D:\Studi\Bachelor\JO2024\bin\zxing.dll
 D:\Studi\Bachelor\JO2024\bin\zxing.presentation.dll
 D:\Studi\Bachelor\JO2024\bin\zxing.xml
 D:\Studi\Bachelor\JO2024\bin\zxing.presentation.xml
+D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.estpaye.resources

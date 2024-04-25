@@ -195,6 +195,10 @@
     <Compile Include="Migrations\202404191802299_ModificationPanierQuantite.Designer.cs">
       <DependentUpon>202404191802299_ModificationPanierQuantite.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404231926104_estpaye.cs" />
+    <Compile Include="Migrations\202404231926104_estpaye.Designer.cs">
+      <DependentUpon>202404231926104_estpaye.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Panier.cs" />
@@ -319,6 +323,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404191802299_ModificationPanierQuantite.resx">
       <DependentUpon>202404191802299_ModificationPanierQuantite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404231926104_estpaye.resx">
+      <DependentUpon>202404231926104_estpaye.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

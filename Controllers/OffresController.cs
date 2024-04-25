@@ -48,6 +48,8 @@ namespace JeuxOlympique.Controllers
                 return HttpNotFound();
             }
             return View(offre);
+
+
         }
 
         // GET: Offres/Create

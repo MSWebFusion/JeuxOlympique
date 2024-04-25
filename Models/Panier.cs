@@ -18,5 +18,7 @@ namespace JeuxOlympique.Models
         public virtual Offre Offre { get; set; }
 
         public int Quantite { get; set;}
+
+        public bool paye {  get; set; }
     }
 }

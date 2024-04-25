@@ -22,8 +22,8 @@ namespace JeuxOlympique.Controllers
         public ActionResult Index()
         {
             var userId = User.Identity.GetUserId();
-            List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList();
-      
+            List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList() ;
+
             return View(paniers);
         }
 
@@ -35,7 +35,11 @@ namespace JeuxOlympique.Controllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             panier MonPanier = new panier();
-
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Rediriger l'utilisateur vers une page de connexion
+                return RedirectToAction("Login", "Account"); // Assurez-vous de remplacer "Login" et "Account" par les noms appropriés de vos contrôleurs et actions de connexion
+            }
             try
             {
                 MonPanier.UserId = User.Identity.GetUserId();
@@ -44,7 +48,7 @@ namespace JeuxOlympique.Controllers
 
                 db.paniers.Add(MonPanier);
                 db.SaveChanges();
-                Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList().Sum(u => u.Quantite);
+                Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList().Sum(u => u.Quantite);
             }
             catch (Exception)
             {
@@ -105,7 +109,7 @@ namespace JeuxOlympique.Controllers
             {
                 db.Entry(panier).State = EntityState.Modified;
                 db.SaveChanges();
-                Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList().Sum(u => u.Quantite);
+                Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList().Sum(u => u.Quantite);
 
                 return RedirectToAction("Index");
             }
@@ -135,7 +139,7 @@ namespace JeuxOlympique.Controllers
             panier panier = db.paniers.Find(id);
             db.paniers.Remove(panier);
             db.SaveChanges();
-            Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList().Sum(u => u.Quantite);
+            Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList().Sum(u => u.Quantite);
             return RedirectToAction("Index");
         }
 
@@ -150,9 +154,9 @@ namespace JeuxOlympique.Controllers
 
         public ActionResult Payer()
         {
-            List<panier> MonPanier = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList();
+            List<panier> MonPanier = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList();
+            Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList().Sum(u => u.Quantite);
 
-           
 
             return View(MonPanier);
         }
@@ -170,12 +174,12 @@ namespace JeuxOlympique.Controllers
         {
             // Récupérer les éléments du panier de l'utilisateur actuellement connecté
             var userId = User.Identity.GetUserId();
-            List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == userId).ToList();
+            List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList();
 
             // Supprimer tous les éléments du panier
             foreach (var item in paniers)
             {
-                db.paniers.Remove(item);
+                item.paye = true;
             }
 
             db.SaveChanges(); // Sauvegarder les modifications dans la base de données

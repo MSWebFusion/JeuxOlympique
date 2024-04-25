@@ -9,6 +9,8 @@
     var manager = new UserManager<ApplicationUser>(new Microsoft.AspNet.Identity.EntityFramework.UserStore<ApplicationUser>(new ApplicationDbContext()));
     var currentUser = manager.FindById(User.Identity.GetUserId());
 }
+
+
 <h2>@ViewBag.Title.</h2>
 
 <p class="text-success">@ViewBag.StatusMessage</p>
@@ -53,6 +55,42 @@
         </dl>
     </section>
 </div>
+
+@{
+    var panier = ViewData["panier"] as panier;
+}
+
+<section class="billetPay">
+    <table class="table marginTop">
+        <tr>
+            <th>
+                @Html.Label("", "Type")
+            </th>
+            <th>
+                @Html.Label("", "Quantité")
+            </th>
+            <th>
+                @Html.Label("", "Prix")
+            </th>
+        </tr>
+
+        @if (panier != null)
+        {
+            <tr>
+                <td data-label="TypeOffre">
+                    @panier.Offre.TypeOffre
+                </td>
+                <td data-label="NB/Pers">
+                    @panier.Quantite
+                </td>
+                <td data-label="Prix">
+                    @panier.Offre.Prix
+                </td>
+            </tr>
+        }
+    </table>
+    <button class="btn btnCenter">Voir mon billet</button>
+</section>
 
 <section class="billetValide">
     <div>
