@@ -1,6 +1,9 @@
-﻿@model JeuxOlympique.Models.IndexViewModel
-@using JeuxOlympique.Models
+﻿@using JeuxOlympique.Models
 @using Microsoft.AspNet.Identity
+@using System.Collections
+
+@model IndexViewModel
+
 @{
     ViewBag.Title = "Mon compte";
 }
@@ -57,7 +60,7 @@
 </div>
 
 @{
-    var panier = ViewData["panier"] as panier;
+    var paniers = (List<panier>)ViewData["paniers"];
 }
 
 <section class="billetPay">
@@ -72,60 +75,26 @@
             <th>
                 @Html.Label("", "Prix")
             </th>
+            <th>
+                @Html.Label("", " ")
+            </th>
         </tr>
-
-        @if (panier != null)
+        @foreach (var item in paniers)
         {
             <tr>
                 <td data-label="TypeOffre">
-                    @panier.Offre.TypeOffre
+                    @item.Offre.TypeOffre
                 </td>
                 <td data-label="NB/Pers">
-                    @panier.Quantite
+                    @item.Quantite
                 </td>
                 <td data-label="Prix">
-                    @panier.Offre.Prix
+                    @item.Offre.Prix
+                </td>
+                <td>
+                    @Html.ActionLink("Voir mon billet", "Ticket", "panier", routeValues: new { id = item.PanierID }, htmlAttributes: new { @class = "btn btnCenter" })
                 </td>
             </tr>
         }
     </table>
-    <button class="btn btnCenter">Voir mon billet</button>
-</section>
-
-<section class="billetValide">
-    <div>
-        <dl class="billetUser">
-            <dt>Nom:
-            <dd>
-                @if (currentUser.Nom != null)
-                {
-                    @Html.Label("", currentUser.Nom)
-                }
-            </dd>
-            <dt>Prénom:
-            <dd>
-                @if (currentUser.Prenom != null)
-                {
-                    @Html.Label("", currentUser.Prenom)
-                }
-            </dd>
-            <dt>Mail:
-            <dd>
-                @if (currentUser.Email != null)
-                {
-                    @Html.Label("", currentUser.Email.ToString())
-                }
-            </dd>
-            <dt>Formule:
-            <dd>
-                @if (currentUser.Email != null)
-                {
-                    @Html.Label("", currentUser.Email.ToString())
-                }
-            </dd>
-        </dl>
-        <div class="qrcode">
-            <img src="@Url.Action("GenerateQRCode", "QRCode", new { text = "Code!" })" alt="QRCode" />
-        </div>
-    </div>
 </section>

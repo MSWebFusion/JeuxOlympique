@@ -1,0 +1,61 @@
+﻿
+@using JeuxOlympique.Models
+@using Microsoft.AspNet.Identity
+
+@model panier
+
+@{
+    ViewBag.Title = "Ticket";
+}
+
+@{
+    var manager = new UserManager<ApplicationUser>(new Microsoft.AspNet.Identity.EntityFramework.UserStore<ApplicationUser>(new ApplicationDbContext()));
+    var currentUser = manager.FindById(User.Identity.GetUserId());
+}
+
+<section class="billetValide">
+    <h2>Ticket</h2>
+
+    <div>
+        <h4>panier</h4>
+        <hr />
+        <dl class="billetUser">
+            <dt>Nom:
+            <dd>
+                @if (currentUser.Nom != null)
+                {
+                    @Html.Label("", currentUser.Nom)
+                }
+            </dd>
+            <dt>Prénom:
+            <dd>
+                @if (currentUser.Prenom != null)
+                {
+                    @Html.Label("", currentUser.Prenom)
+                }
+            </dd>
+            <dt>Mail:
+            <dd>
+                @if (currentUser.Email != null)
+                {
+                    @Html.Label("", currentUser.Email.ToString())
+                }
+            </dd>
+            <dt>QRCode :
+            <dd>
+                @{
+                    var test = Url.Action("GenerateQRCode", new { idpanier = Model.PanierID.ToString() });
+
+                    <img src=@test alt="QRCode" />
+
+                }
+
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Retour à la liste", "Index")
+    </p>
+
+</section>

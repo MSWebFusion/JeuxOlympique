@@ -183,6 +183,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\FonctionUtile.cs" />
     <Compile Include="Migrations\202404191726385_initial.cs" />
     <Compile Include="Migrations\202404191726385_initial.Designer.cs">
       <DependentUpon>202404191726385_initial.cs</DependentUpon>
@@ -198,6 +199,10 @@
     <Compile Include="Migrations\202404231926104_estpaye.cs" />
     <Compile Include="Migrations\202404231926104_estpaye.Designer.cs">
       <DependentUpon>202404231926104_estpaye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202404271300377_addQrCode.cs" />
+    <Compile Include="Migrations\202404271300377_addQrCode.Designer.cs">
+      <DependentUpon>202404271300377_addQrCode.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -295,10 +300,13 @@
     <Content Include="Views\panier\Edit.cshtml" />
     <Content Include="Views\panier\Index.cshtml" />
     <Content Include="Views\panier\Payer.cshtml" />
+    <Content Include="Views\panier\Ticket.cshtml" />
+    <Content Include="Views\Offres\Statistique.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\Formule\" />
+    <Folder Include="Views\FonctionUtile\" />
     <Folder Include="Views\QRCode\" />
   </ItemGroup>
   <ItemGroup>
@@ -326,6 +334,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404231926104_estpaye.resx">
       <DependentUpon>202404231926104_estpaye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404271300377_addQrCode.resx">
+      <DependentUpon>202404271300377_addQrCode.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

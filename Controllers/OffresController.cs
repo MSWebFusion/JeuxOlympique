@@ -222,6 +222,26 @@ namespace JeuxOlympique.Controllers
             }
         }
 
+        public ActionResult Statistique()
+        {
+            Dictionary<string, int> AchatParOffre = new Dictionary<string, int>();
+
+            List<Offre> listOffreExistant = db.Offres.ToList();
+            foreach (Offre item in listOffreExistant)
+            {
+                int nbAchat = db.paniers.ToList()
+                    .Where(u => u.Offre.OffreID == item.OffreID && u.paye == true)
+                    .ToList()
+                    .Sum(i => i.Quantite);
+                AchatParOffre.Add(item.TypeOffre, nbAchat);
+            }
+
+            ViewData["NbOffreAchete"] = AchatParOffre;
+
+            return View();
+        }
+
+
     }
 
 

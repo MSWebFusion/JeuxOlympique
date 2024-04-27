@@ -61,15 +61,15 @@ namespace JeuxOlympique.Controllers
 
             ViewBag.StatusMessage =
                 message == ManageMessageId.ChangePasswordSuccess ? "Votre mot de passe a été changé."
-                : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
-                : message == ManageMessageId.SetTwoFactorSuccess ? "Your two-factor authentication provider has been set."
-                : message == ManageMessageId.Error ? "An error has occurred."
-                : message == ManageMessageId.AddPhoneSuccess ? "Your phone number was added."
-                : message == ManageMessageId.RemovePhoneSuccess ? "Your phone number was removed."
+                : message == ManageMessageId.SetPasswordSuccess ? "Votre mot de passe a été défini."
+                : message == ManageMessageId.SetTwoFactorSuccess ? "Votre fournisseur d'authentification à deux facteurs a été défini."
+                : message == ManageMessageId.Error ? "Une erreur est survenue."
+                : message == ManageMessageId.AddPhoneSuccess ? "Votre numéro de téléphone a été ajouté."
+                : message == ManageMessageId.RemovePhoneSuccess ? "Votre numéro de téléphone a été supprimé."
                 : "";
 
-            
             var userId = User.Identity.GetUserId();
+            ViewData["paniers"] = db.paniers.ToList().Where(u => u.UserId == userId && u.paye == true).ToList();
 
             var model = new IndexViewModel
             {
@@ -130,7 +130,7 @@ namespace JeuxOlympique.Controllers
                 var message = new IdentityMessage
                 {
                     Destination = model.Number,
-                    Body = "Your security code is: " + code
+                    Body = "Votre code de sécurité est: " + code
                 };
                 await UserManager.SmsService.SendAsync(message);
             }
@@ -197,7 +197,7 @@ namespace JeuxOlympique.Controllers
                 return RedirectToAction("Index", new { Message = ManageMessageId.AddPhoneSuccess });
             }
             // If we got this far, something failed, redisplay form
-            ModelState.AddModelError("", "Failed to verify phone");
+            ModelState.AddModelError("", "Échec de la vérification du téléphone");
             return View(model);
         }
 
@@ -288,8 +288,8 @@ namespace JeuxOlympique.Controllers
         public async Task<ActionResult> ManageLogins(ManageMessageId? message)
         {
             ViewBag.StatusMessage =
-                message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
-                : message == ManageMessageId.Error ? "An error has occurred."
+                message == ManageMessageId.RemoveLoginSuccess ? "La connexion externe a été supprimée."
+                : message == ManageMessageId.Error ? "Une erreur est survenue."
                 : "";
             var user = await UserManager.FindByIdAsync(User.Identity.GetUserId());
             if (user == null)

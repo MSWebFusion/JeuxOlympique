@@ -1,4 +1,7 @@
-﻿using System;
+﻿using JeuxOlympique.Helper;
+using System.Drawing;
+using System.IO;
+using System;
 using System.CodeDom;
 using System.Collections.Generic;
 using System.Data;
@@ -170,16 +173,22 @@ namespace JeuxOlympique.Controllers
             return RedirectToAction("OffresClientView", "Offres");
         }
 
+
         public ActionResult ViderPanier()
         {
             // Récupérer les éléments du panier de l'utilisateur actuellement connecté
             var userId = User.Identity.GetUserId();
             List<panier> paniers = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList();
 
+            var manager = new UserManager<ApplicationUser>(new Microsoft.AspNet.Identity.EntityFramework.UserStore<ApplicationUser>(new ApplicationDbContext()));
+            var currentUser = manager.FindById(userId);
             // Supprimer tous les éléments du panier
             foreach (var item in paniers)
             {
+                string token = FonctionUtile.GenerateToken(currentUser.Nom, 24);
                 item.paye = true;
+                item.TokenPrivate = token;
+                item.QrCode = FonctionUtile.GenerateQRCode(token, currentUser, item.Offre);
             }
 
             db.SaveChanges(); // Sauvegarder les modifications dans la base de données
@@ -188,13 +197,52 @@ namespace JeuxOlympique.Controllers
             return Json(new { success = true });
         }
 
-        //public ActionResult validationPaiement(int id)
-        //{
-        //    //Création du envoie du mail avec les informations demandé
-        //    return RedirectToAction("OffresClientView", "Offres");
-        //}
+        public ActionResult Ticket(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Rediriger l'utilisateur vers une page de connexion
+                return RedirectToAction("Login", "Account"); // Assurez-vous de remplacer "Login" et "Account" par les noms appropriés de vos contrôleurs et actions de connexion
+            }
+
+            panier panier = db.paniers.Find(id);
+
+            //Création du envoie du mail avec les informations demandé
+            return View(panier);
+        }
+
+        public ActionResult GenerateQRCode(string idpanier)
+        {
+            byte[] MonFichier = null;
+            Bitmap bmp;
+
+            if (idpanier != string.Empty)
+            {
+                int id = Convert.ToInt32(idpanier);
+                panier monPanier = db.paniers.Find(id);
 
 
+                using (var ms = new MemoryStream(monPanier.QrCode))
+                {
+                    bmp = new Bitmap(ms);
+                    using (var stream = new MemoryStream())
+                    {
+                        bmp.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                        // Retourne l'image du QRCode
+                        MonFichier = stream.ToArray();
+                    }
+                }
+            }
+
+            // Retourne l'image du QRCode
+            return File(MonFichier, "image/png");
+
+
+        }
 
     }
 }

@@ -20,5 +20,10 @@ namespace JeuxOlympique.Models
         public int Quantite { get; set;}
 
         public bool paye {  get; set; }
+
+        public string TokenPrivate { get; set; }
+
+        public byte[] QrCode { get; set; }
+
     }
 }

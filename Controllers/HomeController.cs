@@ -13,7 +13,7 @@ namespace JeuxOlympique.Controllers
         private ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
-            Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId()).ToList().Sum(u => u.Quantite);
+            Session["Quantity"] = db.paniers.ToList().Where(u => u.UserId == User.Identity.GetUserId() && u.paye == false).ToList().Sum(u => u.Quantite);
 
             return View();
         }

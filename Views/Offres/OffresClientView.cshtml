@@ -8,10 +8,14 @@
 
 @if (ViewBag.displayMenu == "Yes")
 {
-    <div class="contentBtnOffre">
-        <button class="btn">@Html.ActionLink("Ajouter une offre", "index", "Offres")</button>
-    </div>
+<div class="contentBtnOffre">
+    <button class="btn">@Html.ActionLink("Ajouter une offre", "index", "Offres")</button>
+</div>
+<div class="contentBtnOffre">
+    <button class="btn">@Html.ActionLink("Statistique", "Statistique", "Offres")</button>
+</div>
 }
+
 
 
 <section class="backOffres">
