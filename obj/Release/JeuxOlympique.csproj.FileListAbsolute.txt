@@ -115,3 +115,4 @@ D:\Studi\Bachelor\JO2024\obj\Release\JeuxOlympique.csproj.CoreCompileInputs.cach
 D:\Studi\Bachelor\JO2024\obj\Release\JeuxOlym.C71317AA.Up2Date
 D:\Studi\Bachelor\JO2024\obj\Release\JeuxOlympique.dll
 D:\Studi\Bachelor\JO2024\obj\Release\JeuxOlympique.pdb
+D:\Studi\Bachelor\JO2024\obj\Release\JeuxOlympique.Migrations.addQrCode.resources

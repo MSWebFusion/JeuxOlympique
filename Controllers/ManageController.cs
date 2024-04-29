@@ -391,6 +391,11 @@ namespace JeuxOlympique.Controllers
             Error
         }
 
-#endregion
+        #endregion
+        public ActionResult PayValide()
+        {
+            return View();
+        }
+
     }
 }

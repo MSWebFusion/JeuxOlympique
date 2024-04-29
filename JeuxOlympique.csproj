@@ -302,6 +302,7 @@
     <Content Include="Views\panier\Payer.cshtml" />
     <Content Include="Views\panier\Ticket.cshtml" />
     <Content Include="Views\Offres\Statistique.cshtml" />
+    <Content Include="Views\Manage\PayValide.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

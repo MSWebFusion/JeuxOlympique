@@ -195,6 +195,8 @@ namespace JeuxOlympique.Controllers
 
             // Retourner un statut HTTP 200 (OK) pour indiquer que la suppression a réussi
             return Json(new { success = true });
+
+
         }
 
         public ActionResult Ticket(int? id)
