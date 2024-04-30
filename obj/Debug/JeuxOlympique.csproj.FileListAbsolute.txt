@@ -335,3 +335,4 @@ D:\Studi\Bachelor\JO2024\bin\zxing.xml
 D:\Studi\Bachelor\JO2024\bin\zxing.presentation.xml
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.estpaye.resources
 D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.addQrCode.resources
+D:\Studi\Bachelor\JO2024\obj\Debug\JeuxOlympique.Migrations.suppResa.resources

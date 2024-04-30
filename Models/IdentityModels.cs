@@ -29,7 +29,6 @@ namespace JeuxOlympique.Models
         {
         }
         public DbSet<Offre> Offres { get; set; }
-        public DbSet<Reservation> Reservation { get; set; }
         public DbSet<panier> paniers { get; set; }
 
         public static ApplicationDbContext Create()

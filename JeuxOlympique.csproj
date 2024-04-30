@@ -204,10 +204,13 @@
     <Compile Include="Migrations\202404271300377_addQrCode.Designer.cs">
       <DependentUpon>202404271300377_addQrCode.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202404301110279_suppResa.cs" />
+    <Compile Include="Migrations\202404301110279_suppResa.Designer.cs">
+      <DependentUpon>202404301110279_suppResa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Panier.cs" />
-    <Compile Include="Models\Reservation.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Offre.cs" />
@@ -338,6 +341,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202404271300377_addQrCode.resx">
       <DependentUpon>202404271300377_addQrCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202404301110279_suppResa.resx">
+      <DependentUpon>202404301110279_suppResa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
