@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Studi\\Bachelor\\JO2024\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\helper\\fonctionutile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:helper\\fonctionutile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\controllers\\paniercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:controllers\\paniercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\panier\\ticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\ticket.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\views\\panier\\payer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\panier\\payer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|D:\\Studi\\Bachelor\\JO2024\\views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\manage\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|d:\\studi\\bachelor\\jo2024\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B00BF20-A60C-4AE4-AF6E-171648E5CD57}|JeuxOlympique.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -29,88 +17,43 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 402,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 488,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FonctionUtile.cs",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Helper\\FonctionUtile.cs",
-              "RelativeDocumentMoniker": "Helper\\FonctionUtile.cs",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Helper\\FonctionUtile.cs",
-              "RelativeToolTip": "Helper\\FonctionUtile.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAjwCsAAAAtAAAA",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Startup.cs",
+              "RelativeDocumentMoniker": "Startup.cs",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Startup.cs",
+              "RelativeToolTip": "Startup.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBoAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T19:33:51.849Z",
+              "WhenOpened": "2024-04-30T10:20:05.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "panierController.cs",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\panierController.cs",
-              "RelativeDocumentMoniker": "Controllers\\panierController.cs",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Controllers\\panierController.cs",
-              "RelativeToolTip": "Controllers\\panierController.cs",
-              "ViewState": "AQIAAKcAAAAAAAAAAAAtwL4AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T10:25:14.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Ticket.cshtml",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Ticket.cshtml",
-              "RelativeDocumentMoniker": "Views\\panier\\Ticket.cshtml",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Ticket.cshtml",
-              "RelativeToolTip": "Views\\panier\\Ticket.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAQwBkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-27T13:06:26.592Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Payer.cshtml",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Payer.cshtml",
-              "RelativeDocumentMoniker": "Views\\panier\\Payer.cshtml",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\panier\\Payer.cshtml",
-              "RelativeToolTip": "Views\\panier\\Payer.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAowFUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-24T10:49:56.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Manage\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Manage\\Index.cshtml",
-              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Manage\\Index.cshtml",
-              "RelativeToolTip": "Views\\Manage\\Index.cshtml",
-              "ViewState": "AQIAADwAAAAAAAAAAAAAAF4AAACCAAAA",
+              "DocumentMoniker": "D:\\Studi\\Bachelor\\JO2024\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Studi\\Bachelor\\JO2024\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-20T12:04:40.871Z",
+              "WhenOpened": "2024-04-30T10:08:06.897Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 228,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 244,
+          "DockedWidth": 316,
           "SelectedChildIndex": -1,
           "Children": [
             {
